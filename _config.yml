@@ -14,8 +14,8 @@ author: hw
 
 # --- List of links in the navigation bar --- #
 
-navbar-links:
-  关于: "aboutme"
+#navbar-links:
+#  关于: "aboutme"
 
 # --- Logo --- #
 
