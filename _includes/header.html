@@ -38,11 +38,11 @@
           {% endif %}
 
           {% if include.type == "post" %}
-            <span class="post-meta">Posted on {{ page.date | date: date_format }}</span>
+            <span class="post-meta">写于 {{ page.date | date: "%Y年 %m月 %d日" }}</span>
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
-                Last updated {{ page.last-updated | date: date_format }}
+                修改于 {{ page.last-updated | date: "%Y年 %m月 %d日" }}
               </span>
             {% endif %}
             {% if page.readtime %}
@@ -72,11 +72,11 @@
           {% endif %}
 
           {% if include.type == "post" %}
-            <span class="post-meta">{{ page.date | date: "%Y年 %m月 %d日" }}</span>
+            <span class="post-meta">写于 {{ page.date | date: "%Y年 %m月 %d日" }}</span>
             {% if page.last-updated %}
               <span class="post-meta">
                 <span class="d-none d-md-inline middot">&middot;</span>
-                Last updated {{ page.last-updated | date: date_format }}
+                修改于 {{ page.last-updated | date: "%Y年 %m月 %d日" }}
               </span>
             {% endif %}
             {% if page.readtime %}
