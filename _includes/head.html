@@ -8,7 +8,10 @@
     {%- elsif page.title -%}
       {{ page.title | strip_html | xml_escape  }}
     {%- else -%}
-      {{ site.title | strip_html | xml_escape }} &middot;  {{ site.description | strip_html | xml_escape }}
+      {{ site.title | strip_html | xml_escape }}
+      {%- if site.description -%}
+         &middot;  {{ site.description | strip_html | xml_escape }}
+      {%- endif -%}  
     {%- endif -%}
   {% endcapture %}
 
